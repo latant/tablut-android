@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Tablut</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="playlocalgame">Play local game</string>
+    <string name="play_on_network">Play on Network</string>
+    <string name="scores">Scores</string>
+    <string name="settings">Settings</string>
+    <string name="tablut">Tablut</string>
+    <string name="exit">Exit</string>
+    <string name="player_names">Player names:</string>
+    <string name="player1">Player1</string>
+    <string name="player2">Player2</string>
+    <string name="defender">Defender:</string>
+    <string name="attacker">Attacker:</string>
+    <string name="start_game">Start Game</string>
+    <string name="fields_unfilled">Fields are unfilled!</string>
+    <string name="versus">VS</string>
+    <string name="pronounceWinnerName">The winner is %1$s!</string>
+    <string name="resumeLocal">Resume local game</string>
+    <string name="player_name">Player name:</string>
+    <string name="start_as_server">Start as Server</string>
+    <string name="start_as_client">Start As Client</string>
+    <string name="reset_scores">Reset Scores</string>
+    <string name="total_steps">Total steps:</string>
+    <string name="attackers_killed">Attackers killed:</string>
+    <string name="defenders_killed">Defenders killed:</string>
+    <string name="defender_victories">Defender victories:</string>
+    <string name="attacker_victories">Attacker victories:</string>
 </resources>

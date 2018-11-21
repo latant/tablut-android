@@ -1,11 +1,60 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="TablutTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/darkBrown</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:textSize">86dp</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Title.SubTitle">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+
+    <style name="MenuLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MenuButton">
+        <item name="android:layout_width">@dimen/ui_element_width</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:textColor">@color/darkBrown</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="MenuText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MenuText.Edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+    <style name="KeyValueFrame">
+        <item name="android:layout_width">@dimen/ui_element_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Separator">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">20dp</item>
     </style>
 
 </resources>

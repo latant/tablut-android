@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView style="@style/Title.SubTitle" android:text="@string/play_on_network"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="@dimen/ui_element_width"
+            android:layout_height="wrap_content">
+            <TextView style="@style/MenuText"
+                android:text="@string/player_name" />
+            <EditText style="@style/MenuText.Edit"
+                android:id="@+id/localPlayer1Name"
+                android:text="@string/player1" />
+        </LinearLayout>
+
+        <Button style="@style/MenuButton"
+            android:text="@string/start_as_server"
+            android:id="@+id/startAsServerButton"/>
+        <Button style="@style/MenuButton"
+            android:id="@+id/startAsClientButton"
+            android:text="@string/start_as_client" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

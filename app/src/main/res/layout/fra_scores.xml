@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView style="@style/Title.SubTitle" android:text="@string/scores"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FrameLayout style="@style/KeyValueFrame">
+                <TextView style="@style/MenuText"
+                    android:text="@string/total_steps" />
+                <TextView style="@style/MenuText"
+                    android:id="@+id/stepCountTextView"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+            <FrameLayout style="@style/KeyValueFrame">
+                <TextView style="@style/MenuText"
+                    android:text="@string/attackers_killed" />
+                <TextView style="@style/MenuText"
+                    android:id="@+id/attackerKillCountTextView"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+            <FrameLayout style="@style/KeyValueFrame">
+                <TextView style="@style/MenuText"
+                    android:text="@string/defenders_killed" />
+                <TextView style="@style/MenuText"
+                    android:id="@+id/defenderKillCountTextView"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+            <FrameLayout style="@style/KeyValueFrame">
+                <TextView style="@style/MenuText"
+                    android:text="@string/defender_victories" />
+                <TextView style="@style/MenuText"
+                    android:id="@+id/defenderVictoryCountTextView"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+            <FrameLayout style="@style/KeyValueFrame">
+                <TextView style="@style/MenuText"
+                    android:text="@string/attacker_victories" />
+                <TextView style="@style/MenuText"
+                    android:id="@+id/attackerVictoryCountTextView"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+            <View style="@style/Separator" />
+            <GridLayout android:id="@+id/recordsGrid"
+                android:layout_width="@dimen/ui_element_width"
+                android:layout_height="match_parent"
+                android:columnCount="3">
+
+            </GridLayout>
+            <View style="@style/Separator" />
+            <Button style="@style/MenuButton"
+                android:text="@string/reset_scores"
+                android:id="@+id/resetScores"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
