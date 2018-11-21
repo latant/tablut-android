@@ -74,8 +74,10 @@ public class Tablut implements Serializable {
     public Player getWinner() {
         if (king.isDied())
             return attacker;
-        if (king.hasWon())
+        int minimumSide = actual == king.getOwner() ? 1 : 2;
+        if (king.getVisitableSides().size() >= minimumSide || king.getField().isSide()) {
             return defender;
+        }
         return null;
     }
 

@@ -1,5 +1,4 @@
 package hu.bme.aut.tablut.game.piece;
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import hu.bme.aut.tablut.game.Direction;
@@ -40,7 +39,6 @@ public class King extends Piece {
     }
 
     public boolean isDied() { return this.isDied; }
-    public boolean hasWon() { return getVisitableSides().size() >= 2; }
 
     public ArrayList<Field> getVisitableSides() {
         ArrayList<Field> result = new ArrayList<>();

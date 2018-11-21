@@ -51,4 +51,11 @@ public abstract class Field implements Serializable {
     public abstract ArrayList<Field> extendIfApproachable(ArrayList<Field> fields, int dir);
 
     public abstract Field ifCanLeadToSide(int i);
+
+    public boolean isSide() {
+        for (Field n : neighbours)
+            if (n == null)
+                return true;
+        return false;
+    }
 }
